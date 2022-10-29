@@ -1,0 +1,118 @@
+:root{
+  --primary-text-color: #C8FD31;
+  --primary-bg: #000000;
+  --effect-color: rgb(248, 27, 27);
+  /* --effect-color: rgb(72, 83, 228); */
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.railway-bold{
+  font-family: 'Ubuntu', sans-serif;
+}
+.railway-light{
+  font-family: 'Raleway', sans-serif;
+
+}
+.menu-font{
+  font-family: 'Michroma', sans-serif;
+}
+/* Navbar */
+.navbar{
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg);
+}
+.Logo{
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
+  cursor: pointer;
+  /* font-weight: 800; */
+}
+.Logo:hover{
+  transform: scale(1.2);
+  color: var(--effect-color);
+}
+.fa-bars{
+  cursor: pointer;
+  font-size: 50px;
+  transform: scaleX(1.4);
+  transition: 0.5s;
+}
+.fa-bars:hover{
+  transform: scaleX(1.7);
+  color: var(--effect-color);
+}
+
+/* sidebar */
+
+.sidebar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-text-color);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: 0.3s;
+  transform: translate(-100%);
+}
+.open-sidebar{
+  transform: translate(0);
+}
+
+.close-X{
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: 700;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  transition: 0.3s;
+}
+.close-X:hover{
+  transform: scale(1.2);
+  color: var(--effect-color);
+  
+}
+
+.menu ul{
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+.menu ul li{
+  font-size: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.3s;
+  /* text-decoration: none; */
+}
+.menu ul li:hover{
+  transform: scale(1.2);
+  /* color: var(--effect-color); */
+}
+.nav-anchor{
+  transition: 0.3s;
+  text-decoration: none;
+  color: var(--primary-bg);
+}
+.nav-anchor:hover{
+  transform: scale(1.2);
+  color: var(--effect-color);
+}
