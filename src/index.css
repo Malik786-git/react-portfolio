@@ -149,14 +149,14 @@ code {
   bottom: 0;
   left: 0;
   height: 1px;
-  background-color: var(--primary-text-color);
+  background-color: var(--effect-color);
 }
 
 .contact ul li a:hover {
   color: var(--effect-color);
 }
 .mail-whatsapp {
-  color: azure;
+  color: var(--effect-color);
 }
 .fa-whatsapp {
   color: #25D366;
@@ -237,16 +237,20 @@ code {
 }
 .mypic{
   position: relative;
+  display: block;
+  height: 450px;
 }
+
+
 .mypic figure {
   position: absolute;
   top: -70px;
   right: 0;
+
 }
 .mypic figure img{
   border: 2px solid var(--effect-color);
   height: 450px;
-  /* box-shadow: rgba(255, 253, 253, 0.25) 0px 54px 55px, rgba(243, 238, 238, 0.12) 0px -12px 30px, rgba(235, 225, 225, 0.12) 0px 4px 6px, rgba(219, 211, 211, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   box-shadow: blue 0px 0px 0px 2px inset, var(--primary-bg) 10px -10px 0px -3px, var(--primary-text-color) 10px -10px;
 }
 
@@ -267,10 +271,33 @@ code {
   background: white;
 }
 
+.aboutlist ul{
+   list-style: none;
+}
 
+.about ul li{
+  font-size: 22px;
+}
 
+.I-love{
+  position: relative;
+  font-size: 50px;     
+  margin-left: 30px;
+  padding-bottom: 10px;
+  color: var(--primary-text-color);
+  margin-bottom: 20px;     
 
-
+  
+}
+.I-love:after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  bottom: -5px;
+  left: 0;
+  height: 5px;
+  background-color: var(--effect-color);
+}
 
 
 
@@ -280,7 +307,9 @@ code {
 /* ////////////////////////////////////////////////////////// */
 /* Responsiveness for other devices */
 @media screen and (max-width:998px) {
-
+  .mypic{
+    height: 520px;
+  }
   .mypic figure {
     top: 50px;
   }
@@ -293,8 +322,18 @@ code {
     .about-main-heading{
       font-size: 70px; 
     }
+    .mypic{
+      height: 480px;
+    }
     .mypic figure img{
       height: 400px;
+    }
+    .about ul li{
+      font-size: 20px;
+    }
+    .I-love{
+      margin-left: 20px; 
+      font-size: 40px;     
     }
   }
   @media screen and (max-width:576px) {
@@ -307,12 +346,24 @@ code {
     .about-main-heading{
       font-size: 60px; 
     }
+    .mypic{
+      height: 370px;
+    }
     .mypic figure img{
       height: 300px;
     }
     .mypic figure {
       right: 40px;
     }
+    
+.about ul li{
+  font-size: 15px;
+}
+.I-love{
+  margin-left: 20px; 
+  font-size: 30px;
+  margin-bottom: 20px;     
+}
 
   }  
   @media screen and (max-width:400px) {
@@ -321,6 +372,9 @@ code {
     }
     .about-main-heading{
       font-size: 40px; 
+    }
+    .mypic{
+      height: 270px;
     }
     .mypic figure img{
       height: 200px;

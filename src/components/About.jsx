@@ -1,6 +1,7 @@
 import PageHeading from "./PageHeading"
 import MyGithub from "./MyGithub"
 import AboutComponent from "./AboutComponents/AboutComponent";
+import Ilove from "./AboutComponents/Ilove";
 
 const About = () => {
     return (
@@ -16,6 +17,7 @@ const About = () => {
                         </h1>         
               </div>
               <div className="col-xxl-8 col-10 mx-auto mypic">
+             
                 <figure>
                   <img src="./assets/img/mypic.jpeg" alt="" />
                   <div className="meet-me">
@@ -23,10 +25,12 @@ const About = () => {
                     <div className="line"></div>
                   </div>
                 </figure>
+             
               </div>
           </div>
           <div className="row">
           <AboutComponent/>
+          <Ilove/>
           </div>
           <MyGithub/>
       </div>
