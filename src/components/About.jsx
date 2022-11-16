@@ -2,17 +2,18 @@ import PageHeading from "./PageHeading"
 import MyGithub from "./MyGithub"
 import AboutComponent from "./AboutComponents/AboutComponent";
 import Ilove from "./AboutComponents/Ilove";
+import Footer from "./Footer/Footer";
 
 const About = () => {
     return (
-      <div className="container about text-light">
+      <section className="container mt-5 p-5 about text-light">
         <PageHeading  content="about" />
           <div className="row mx-auto">
               <div className="col-xxl-8 col-10 mx-auto">
                        <h1 className="about-main-heading menu-font">
-                           Hello, <br />
+                           Hello, <br /> 
                            it's <br />
-                           M. Jahangir <br />
+                           Jahangir <br />
                            here
                         </h1>         
               </div>
@@ -31,9 +32,10 @@ const About = () => {
           <div className="row">
           <AboutComponent/>
           <Ilove/>
+          <Footer/>
           </div>
           <MyGithub/>
-      </div>
+      </section>
     )
   }
   

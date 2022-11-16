@@ -6,15 +6,16 @@ const Ilove = () => {
         "Programming 💻",
         "Teaching Tech 🖧"
     ];
-  return (
 
+    
+  return (
 
     <div className="aboutlist col-xxl-8 col-10 mx-auto py-3 menu-font">
       <h1 className="I-love">I <i className="fa fa-heart" aria-hidden="true"></i></h1>
-         <ul>
+         <ul className="mb-5">
              {
                  I_Love.map((data, key)=>{
-                     return  <li key={key}>{data}</li>
+                     return  <li className="hobbies" key={key}>{data}</li>
                     })
             }
         </ul>   
