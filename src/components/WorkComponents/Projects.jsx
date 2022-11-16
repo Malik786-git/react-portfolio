@@ -3,7 +3,7 @@ const Projects = ({data}) => {
 
   return (
 
-  <div className=" col-10 mx-auto  project-div my-2">
+  <div className=" col-10 mx-auto  project-div  my-5">
     <div className="project-content text-center">
       <div className="project-about railway-light">
       <h1 className="railway-bold">{name}</h1>

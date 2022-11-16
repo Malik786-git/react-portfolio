@@ -135,6 +135,9 @@ code {
 .menu ul li:hover {
   transform: scale(1.2);
 }
+.logos{
+  font-size: 20px;
+}
 .nav-anchor {
   transition: 0.3s;
   text-decoration: none;
@@ -541,14 +544,37 @@ figure {
     right: 30px;
   }
 .work .projectImg{
-  
-    height: 220px;
+    
+    height: 200px;
    }
   }
   @media screen and (max-width:576px) {
     html{
       font-size: 52.5%;
     }
+    .MyGithub {
+      background: rgb(197, 189, 189);
+      background: -webkit-linear-gradient(to right, #fdfdfd, #c7bebe);
+      background: linear-gradient(to right, #fdfdfd, #c7bebe);
+      position: fixed;
+      right: 0;
+      top: 35%;
+      width: 40px;
+      height: 170px;
+      color: var(--primary-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    .MyGithub:hover{
+      background: var(--effect-color);
+    }
+    .MyGithub span {
+      font-size: 12px;
+      
+    }
+   
     .home h1{
       font-size: 40px;
     }
@@ -581,8 +607,8 @@ figure {
 }
 .skills-icons img{
   margin: 20px 20px;
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
 
 }
 .work-skill-heading{
@@ -593,7 +619,7 @@ figure {
 }
 .work .projectImg{
 
-height: 200px;
+height: 150px;
  }
   }  
   @media screen and (max-width:400px) {
@@ -623,5 +649,9 @@ height: 200px;
     .meet-me .line{
       width: 50px;
     }
-   
+    .skills-icons img{
+      height: 35px;
+      width: 35px;
+    
+    }
   }

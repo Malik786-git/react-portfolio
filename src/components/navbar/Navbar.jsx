@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="container-fuild navbar railway-bold mb-5 fixed-top">
         <div className="container d-flex justify-content-between">
 
-         <h5 className="Logo menu-font"><NavLink className="nav-anchor" to="/" >ΛΛalik 🖊</NavLink></h5>
+         <h5 className="Logo menu-font"><NavLink className="nav-anchor logos" to="/" >ΛΛalik 🖊</NavLink></h5>
          <span className="bar" onClick={openSidebar}>
                 <i className="fa fa-bars" aria-hidden="true"></i>
                
